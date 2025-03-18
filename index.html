@@ -6,21 +6,37 @@
     <title>FitFood - Recettes personnalisées selon vos objectifs</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4caf50;
+            --secondary-color: #388e3c;
+        }
+        .highlight {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .green-border {
+            border: 2px solid #4caf50;
+        }
+        .green-bg {
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">FitFood</div>
+        <div class="logo" style="color: #4caf50;">FitFood</div>
         <nav>
             <ul>
-                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./index.html" style="color: #4caf50; font-weight: bold;">Accueil</a></li>
                 <li><a href="./apropos.html">À propos</a></li>
                 <li><a href="#services">Fonctionnalités</a></li>
                 <li><a href="#offres">Nos offres</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="#offres" class="cta">Essayer maintenant</a>
+        <a href="#offres" class="cta" style="background-color: #4caf50;">Essayer maintenant</a>
     </header>
     
     <video id="background-video" autoplay muted loop>
@@ -31,33 +47,34 @@
     <section id="accueil" class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-            <h1>Des recettes personnalisées selon vos objectifs nutritionnels</h1>
-            <p>FitFood vous aide à manger sainement grâce à des recettes adaptées à vos besoins : prise de muscle, perte de poids ou prise de poids.</p>
+            <h1>Des recettes <span class="highlight">personnalisées</span> selon vos objectifs nutritionnels</h1>
+            <p>FitFood vous aide à manger <span class="highlight">sainement</span> grâce à des recettes adaptées à vos besoins : prise de muscle, perte de poids ou prise de poids.</p>
             <div class="cta-group">
-                <a href="#services" class="cta primary">Découvrir</a>            </div>
+                <a href="#services" class="cta primary" style="background-color: #4caf50;">Découvrir</a>
+            </div>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <h2>Fonctionnalités</h2>
+    <section id="services" class="services green-bg">
+        <h2 style="color: #388e3c;">Fonctionnalités</h2>
         <div class="services-grid">
             <div class="service-card">
-                <i class="fas fa-dumbbell"></i>
+                <i class="fas fa-dumbbell" style="color: #4caf50;"></i>
                 <h3>Prise de Muscle</h3>
                 <p>Recettes riches en protéines et parfaitement équilibrées pour développer votre masse musculaire</p>
             </div>
             <div class="service-card">
-                <i class="fas fa-weight"></i>
+                <i class="fas fa-weight" style="color: #4caf50;"></i>
                 <h3>Perte de Poids</h3>
                 <p>Recettes faibles en calories mais rassasiantes pour atteindre vos objectifs de perte de poids</p>
             </div>
             <div class="service-card">
-                <i class="fas fa-pizza-slice"></i>
+                <i class="fas fa-pizza-slice" style="color: #4caf50;"></i>
                 <h3>Prise de Poids</h3>
                 <p>Recettes hypercaloriques et nutritives pour une prise de poids saine</p>
             </div>
             <div class="service-card">
-                <i class="fas fa-carrot"></i>
+                <i class="fas fa-carrot" style="color: #4caf50;"></i>
                 <h3>Préférences Alimentaires</h3>
                 <p>Adaptation aux allergies, intolérances et préférences alimentaires</p>
             </div>
@@ -65,9 +82,9 @@
     </section>
 
     <section id="offres" class="applications">
-        <h2>Nos Offres</h2>
+        <h2 style="color: #388e3c;">Nos Offres</h2>
         <div class="applications-grid">
-            <div class="application-card standard">
+            <div class="application-card standard" style="background: linear-gradient(135deg, #4caf50, #81c784);">
                 <div class="card-content">
                     <h3>Offre Standard</h3>
                     <p class="price">4,99€/mois</p>
@@ -80,7 +97,7 @@
                     <a href="#contact" class="cta">Choisir cette offre</a>
                 </div>
             </div>
-            <div class="application-card premium">
+            <div class="application-card premium" style="background: linear-gradient(135deg, #388e3c, #43a047);">
                 <div class="card-content">
                     <h3>Offre Premium</h3>
                     <p class="price">14,99€/mois</p>
@@ -97,8 +114,8 @@
         </div>
     </section>
 
-    <section id="demo" class="demo">
-        <h2>Comment ça marche</h2>
+    <section id="demo" class="demo green-bg">
+        <h2 style="color: #388e3c;">Comment ça marche</h2>
         <div class="demo-container">
             <div class="demo-video">
                 <video controls>
@@ -107,21 +124,21 @@
                 </video>
             </div>
             <div class="demo-text">
-                <h3>En 4 étapes simples</h3>
+                <h3 style="color: #4caf50;">En 4 étapes simples</h3>
                 <ol>
-                    <li>Définissez votre objectif (prise de muscle, perte de poids, prise de poids)</li>
-                    <li>Indiquez vos préférences alimentaires et allergies</li>
-                    <li>Ajoutez les ingrédients que vous avez déjà</li>
-                    <li>Recevez des recettes personnalisées adaptées à vos besoins</li>
+                    <li>Définissez votre <span class="highlight">objectif</span> (prise de muscle, perte de poids, prise de poids)</li>
+                    <li>Indiquez vos <span class="highlight">préférences alimentaires</span> et allergies</li>
+                    <li>Ajoutez les <span class="highlight">ingrédients</span> que vous avez déjà</li>
+                    <li>Recevez des <span class="highlight">recettes personnalisées</span> adaptées à vos besoins</li>
                 </ol>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Essayez FitFood dès aujourd'hui</h2>
+        <h2 style="color: #388e3c;">Essayez FitFood dès aujourd'hui</h2>
         <div class="contact-container">
-            <form class="contact-form">
+            <form class="contact-form green-border">
                 <div class="form-group">
                     <input type="text" placeholder="Nom" required>
                 </div>
@@ -146,28 +163,28 @@
                 <div class="form-group">
                     <textarea placeholder="Vos préférences alimentaires, allergies, etc." required></textarea>
                 </div>
-                <button type="submit" class="cta">Commencer maintenant</button>
+                <button type="submit" class="cta" style="background-color: #4caf50;">Commencer maintenant</button>
             </form>
         </div>
     </section>
   
-    <footer>
+    <footer style="background-color: #1b5e20;">
         <div class="footer-content">
             <div class="footer-section">
-                <h4>FitFood</h4>
+                <h4 style="color: #81c784;">FitFood</h4>
                 <p>Des recettes personnalisées pour atteindre vos objectifs</p>
             </div>
             <div class="footer-section">
-                <h4>Contact</h4>
+                <h4 style="color: #81c784;">Contact</h4>
                 <p>Email: contact@fitfood.fr</p>
                 <p>Tél: +33 1 23 45 67 89</p>
             </div>
             <div class="footer-section">
-                <h4>Suivez-nous</h4>
+                <h4 style="color: #81c784;">Suivez-nous</h4>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin" style="color: #81c784;"></i></a>
+                    <a href="#"><i class="fab fa-twitter" style="color: #81c784;"></i></a>
+                    <a href="#"><i class="fab fa-instagram" style="color: #81c784;"></i></a>
                 </div>
             </div>
         </div>
