@@ -3,41 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataPrint 3D - Visualisation de Données en 3D</title>
+    <title>FitFood - Recettes personnalisées selon vos objectifs</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
     <header>
-        <div class="logo">DataPrint 3D</div>
+        <div class="logo">FitFood</div>
         <nav>
             <ul>
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="./apropos.html">À propos</a></li>
-                <li><a href="#activite">Activité</a></li>
+                <li><a href="#services">Fonctionnalités</a></li>
+                <li><a href="#offres">Nos offres</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="#contact" class="cta">Commencer</a>
+        <a href="#offres" class="cta">Essayer maintenant</a>
     </header>
     
     <video id="background-video" autoplay muted loop>
-        <source src="./Video/fond.mp4" type="video/mp4">
+        <source src="./images/image fond.avif" type="video/mp4">
         Votre navigateur ne supporte pas les vidéos HTML5.
     </video>
 
     <section id="accueil" class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-            <h1>Transformez vos données en objets réels avec DataPrint 3D</h1>
-            <p>Explorez une nouvelle manière de comprendre et d’analyser vos données grâce à l’impression 3D.</p>
-            <a href="#activite" class="cta">Découvrir</a>
+            <h1>Des recettes personnalisées selon vos objectifs nutritionnels</h1>
+            <p>FitFood vous aide à manger sainement grâce à des recettes adaptées à vos besoins : prise de muscle, perte de poids ou prise de poids.</p>
+            <div class="cta-group">
+                <a href="#services" class="cta primary">Découvrir</a>            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Fonctionnalités</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Prise de Muscle</h3>
+                <p>Recettes riches en protéines et parfaitement équilibrées pour développer votre masse musculaire</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-weight"></i>
+                <h3>Perte de Poids</h3>
+                <p>Recettes faibles en calories mais rassasiantes pour atteindre vos objectifs de perte de poids</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pizza-slice"></i>
+                <h3>Prise de Poids</h3>
+                <p>Recettes hypercaloriques et nutritives pour une prise de poids saine</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-carrot"></i>
+                <h3>Préférences Alimentaires</h3>
+                <p>Adaptation aux allergies, intolérances et préférences alimentaires</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="offres" class="applications">
+        <h2>Nos Offres</h2>
+        <div class="applications-grid">
+            <div class="application-card standard">
+                <div class="card-content">
+                    <h3>Offre Standard</h3>
+                    <p class="price">4,99€/mois</p>
+                    <p>Générez des recettes personnalisées en fonction de vos préférences</p>
+                    <ul>
+                        <li>Recettes personnalisées</li>
+                        <li>Basées sur vos ingrédients disponibles</li>
+                        <li>Adaptées à vos objectifs</li>
+                    </ul>
+                    <a href="#contact" class="cta">Choisir cette offre</a>
+                </div>
+            </div>
+            <div class="application-card premium">
+                <div class="card-content">
+                    <h3>Offre Premium</h3>
+                    <p class="price">14,99€/mois</p>
+                    <p>Profitez d'un accompagnement nutritionnel complet</p>
+                    <ul>
+                        <li>Plan nutritionnel sur mesure</li>
+                        <li>Suivi des progrès</li>
+                        <li>Comparaison des prix en supermarché</li>
+                        <li>Chatbot IA pour répondre à vos questions</li>
+                    </ul>
+                    <a href="#contact" class="cta">Choisir cette offre</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo">
+        <h2>Comment ça marche</h2>
+        <div class="demo-container">
+            <div class="demo-video">
+                <video controls>
+                    <source src="./Video/demo.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas les vidéos.
+                </video>
+            </div>
+            <div class="demo-text">
+                <h3>En 4 étapes simples</h3>
+                <ol>
+                    <li>Définissez votre objectif (prise de muscle, perte de poids, prise de poids)</li>
+                    <li>Indiquez vos préférences alimentaires et allergies</li>
+                    <li>Ajoutez les ingrédients que vous avez déjà</li>
+                    <li>Recevez des recettes personnalisées adaptées à vos besoins</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Essayez FitFood dès aujourd'hui</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Sélectionnez votre objectif</option>
+                        <option value="muscle">Prise de muscle</option>
+                        <option value="perte">Perte de poids</option>
+                        <option value="prise">Prise de poids</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Choisissez votre offre</option>
+                        <option value="standard">Standard (4,99€/mois)</option>
+                        <option value="premium">Premium (14,99€/mois)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Vos préférences alimentaires, allergies, etc." required></textarea>
+                </div>
+                <button type="submit" class="cta">Commencer maintenant</button>
+            </form>
         </div>
     </section>
   
     <footer>
-        <p>&copy; 2025 DataPrint 3D - Tous droits réservés.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FitFood</h4>
+                <p>Des recettes personnalisées pour atteindre vos objectifs</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@fitfood.fr</p>
+                <p>Tél: +33 1 23 45 67 89</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitFood - Tous droits réservés</p>
+        </div>
     </footer>
 </body>
 </html>
